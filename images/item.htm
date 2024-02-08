@@ -1,0 +1,1386 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"></meta>
+<meta HTTP-EQUIV="Content-language" CONTENT="ar,en"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-translate-customization" content="7ee176819c0ea333-2359d96f97c04a1d-gcc4433249ee29087-f" />
+<meta name="p:domain_verify" content="f17bbc449ab74229bad5493b97db636d"/>
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="7 days" />
+<meta property="og:site_name" content="www.deal.com.lb" />
+<meta property="fb:pages" content="107460366040456" />
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "4ae3e18d-29d2-4b58-8e20-8daf679de4c0",
+      safari_web_id: 'web.onesignal.auto.13d8bf97-93cf-4a09-b799-2a50baaf1ebd',
+      autoRegister: true,
+      notifyButton: {
+        enable: true, /* Set to false to hide *//* Set to false to hide */
+		displayPredicate: function() {
+				return OneSignal.isPushNotificationsEnabled()
+					.then(function(isPushEnabled) {
+						/* The user is subscribed, so we want to return "false" to hide the notify button */
+						return !isPushEnabled;
+					});
+			},
+		size: 'medium', /* One of 'small', 'medium', or 'large' */
+        theme: 'default', /* One of 'default' (red-white) or 'inverse" (white-red) */
+		prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+        showCredit: false, /* Hide the OneSignal logo */
+        text: {
+            'tip.state.unsubscribed': "Let's Get Connected!",
+            'tip.state.subscribed': "You are all set to receive the latest offers & updates",
+            'tip.state.blocked': "You've blocked notifications",
+            'message.prenotify': "Don’t miss out! Get notified on the latest offers from Deal.com.lb",
+            'message.action.subscribed': "Congrats. We're connected and you will now receive the latest offers & updates",
+            'message.action.resubscribed': "Congrats. We're connected and you will now receive the latest offers & updates",
+            'message.action.unsubscribed': "You won't receive notifications again",
+            'dialog.main.title': "Get the latest offers & updates",
+            'dialog.main.button.subscribe': 'Connect Now',
+            'dialog.main.button.unsubscribe': 'Unsubscribe',
+            'dialog.blocked.title': 'Unblock Notifications',
+            'dialog.blocked.message': "Follow these instructions to allow notifications:"
+        }
+      },
+    welcomeNotification: {
+        "title": "Deal.com.lb Notifications & Updates",
+        "message": "Thanks for connecting!",
+        // "url": "" /* Leave commented for the notification to not open a window on Chrome and Firefox (on Safari, it opens to your webpage) */
+    }
+ }]);
+  </script>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" href="includes/font-awesome-4.4.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/style.css?v=2.29"></link>
+<script src="js/jquery.js" ></script> 
+<script src="js/functions.js?v=1.1" ></script>
+<!-- facebook helper -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '779372995444264');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=779372995444264&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '473928159668924');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=473928159668924&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- end facebook helper -->
+<script>
+$(document).ready(function(){
+	
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			if($(this).width() >=920){
+				$("#header_middle").addClass("stickyHeader");
+			}else{
+				$("#header_phone_fixed").addClass("stickyHeader");
+				document.getElementById('header_phone_fixed').style.border = "1px solid #e8e8e8";
+			}
+        } else {		
+               $('.scrollup').fadeOut();
+			if($(this).width() >=920){
+				$("#header_middle").removeClass("stickyHeader");
+			}else{
+				$("#header_phone_fixed").removeClass("stickyHeader");	
+				document.getElementById('header_phone_fixed').style.border = "0px";
+			}	
+        }
+    });
+       $('.scrollup').click(function () {
+           $("html, body").animate({
+               scrollTop: 0
+           }, 600);
+           return false;
+       });
+	// Find all placeholders
+var placeholders = document.querySelectorAll('input[placeholder]'+',textarea[placeholder]');
+
+if (placeholders.length) {
+     // convert to array
+    placeholders = Array.prototype.slice.call(placeholders);
+    
+    // copy placeholder text to a hidden div
+    var div = $('<div id="placeholders" style="display:none;"></div>');
+    
+    placeholders.forEach(function(input){
+      var text = input.placeholder;
+      div.append('<div>' + text + '</div>');    
+    });
+    
+    $('body').append(div);
+    
+    // save the first placeholder in a closure
+    var originalPH = placeholders[0].placeholder;
+    
+    // check for changes and update as needed
+    setInterval(function(){
+      if (isTranslated()) {
+        updatePlaceholders();
+        originalPH = placeholders[0].placeholder;
+      }
+    }, 500);
+	
+    // hoisted ---------------------------
+    function isTranslated() { // true if the text has been translated
+       var currentPH = $($('#placeholders > div')[0]).text();
+       return !(originalPH == currentPH);
+    }
+    
+    function updatePlaceholders() {
+      $('#placeholders > div').each(function(i, div){
+        placeholders[i].placeholder = $(div).text();
+      });
+    }
+}
+    $(".heading1").click(function(){
+        $(".cart_content").slideToggle('fast');
+    });
+    $(".account_clearfix").click(function(){
+        $(".account_content").show();
+    });
+    $(".account_content").mouseover(function(){
+        $(".account_content").show();
+    });
+    $(".account_clearfix").mouseout(function(){
+        $(".account_content").hide();
+    });
+});
+</script>    <title>28cm Wooden Pizza Serving Tray Dinner Board</title>
+    <link rel="image_src" href="http://www.deal.com.lb/dealuploads/img-28cm-Wooden-Pizza-Serving-Tray-Dinner-Board-1569577922.jpg" />
+    <meta name="description" content="28cm Wooden Pizza Serving Tray Dinner Board" />
+    <meta name="keywords" content="28cm,Wooden,Pizza,Serving,Tray, Dinner,Board,,
+				Homeware supplies,Health Products,Office & School Supplies,Phone & Computer,Toys & Hobbies,Clothing & Accessories,Baby & Toddler Products,Festive & Party Supplies,Home Improvement Tools,Makeup & Beauty,Wallpaper Stickers,Deva,Sports & Entertainment,Grocery,Cleaning & Hygiene,Fight Corona,Muller Koch,Super Deal,gosawa, deal, offer, beirut, lebanon, discount, coupon, voucher, hotel, restaurant, shopping, product, retail, spa, dining, activities, machismo, lebanesehotdeals, best online offers in lebanon, scoop city, makhsoom, online shopping, buy online lebanon, livingsocial, groupon,Sheapest prices,Accessories lebanon,women wear,online shopping,lebanon shopping,Online shopping lebanon,Buy online,lebanon deals,online deals lebanon,lebanon best deals,beirut deals,deals in lebanon,low prices deals,lebanon offers,lebanon hot deals,lebanon hot offers,online deals,online offers,women accessories deals,woman accessories offers,onlinedeal, online deal, online shopping, e-commerce, deal, discount, sale, saving, offers, shopping, deals, services, products, kitchen, home, decor, babies, woman, man, kids, deal.com.lb, www.deal.com.lb" />
+    <meta property="og:title" content="28cm Wooden Pizza Serving Tray Dinner Board" />
+    <meta property="og:url" content="https://www.deal.com.lb/item.php?i=57774&t=28cm Wooden Pizza Se&" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="https://www.deal.com.lb/dealuploads/img-28cm-Wooden-Pizza-Serving-Tray-Dinner-Board-1569577922.jpg" />
+    <script>
+        // ViewContent
+                fbq('track', 'ViewContent', { content_type: 'product', content_ids: ['57774'], content_name: '28cm Wooden Pizza Serving Tray Dinner Board', value: 70.25, currency: 'USD' });
+            </script>
+</head>
+<body>
+<div id="loading" class="center">
+    <img id="loading-image" src="images/loadingroll.gif" alt="Loading..."  align="center"/>
+</div>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script><script type="text/javascript">_atrk_opts = { atrk_acct: "OMzfg1aAQ700G6", domain:"deal.com.lb"}; atrk ();</script><noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=OMzfg1aAQ700G6" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+Date();a=s.createElement(o),
+ 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a
+,m)
+ 
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59884710-1', 'auto');
+  ga('create', 'UA-103811369-1', 'auto', 'developerTracker');
+  ga('send', 'pageview');
+  ga('developerTracker.send', 'pageview');
+
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=370880709662061";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+    function add_to_cart(){
+        var addcart_dealid=document.getElementById('add_cart_deal_id').value;
+        var addcart_qtity_dealid=document.getElementById('add_cart_qtity_deal_id').value;
+        var addcart_customizedmsg=document.getElementById('add_cart_customized_name').value;
+        $.ajax({
+            url:'includes/add_to_cart.php?add_cart_deal_id='+addcart_dealid+'&quantity='+addcart_qtity_dealid+'&customized_msg='+addcart_customizedmsg,
+            data:$(this).serialize(),
+            type:'POST',
+            success:function(data){
+                document.getElementById('cart_block_content').innerHTML=data;
+                var new_item_nb_cart=parseInt(document.getElementById('nb_of_deals_header_cart').value);
+                document.getElementById('cart_total_num').value=new_item_nb_cart;
+                document.getElementById("cart-total").innerHTML="<span id='cart-total'>"+new_item_nb_cart+"</span>";
+            }
+        });
+    }
+    function remove_from_cart(){
+        item_part=document.getElementById('item_cart_toremove').value;
+        $.ajax({
+            url:'includes/remove_item.php?item_cart_toremove='+item_part,
+            data:$(this).serialize(),
+            type:'POST',
+            success:function(data){
+                document.getElementById('cart_block_content').innerHTML=data;
+                var new_item_nb_cart=document.getElementById('cart_total_num').value-1;
+                if(new_item_nb_cart<0) new_item_nb_cart=0;
+                document.getElementById('cart_total_num').value=new_item_nb_cart;
+                document.getElementById("cart-total").innerHTML="<span id='cart-total'>"+new_item_nb_cart+"</span>";
+            }
+        });
+    }
+</script>
+<div id="phone_menu" >
+    <div class="phone_menu_content" onclick="document.getElementById('phone_menu').style.display='none';" align="right">
+        x close
+    </div>
+    <div class="category_list grayBorder" style="display:block;min-height:initial;-webkit-user-select: none;  /* Chrome all / Safari all */-moz-user-select: none;     /* Firefox all */-ms-user-select: none;      /* IE 10+ */user-select: none;">
+	<ul  style="border-top:0px;border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;"  onclick="window.location.href='item.php?categ=172';" >
+		<li >
+			<a href="item.php?categ=172"> <img src="categories_images/subcategoryicon1617777926.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Super Deal</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=163';" >
+		<li >
+			<a href="item.php?categ=163"> <img src="categories_images/subcategoryicon1585306808.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Grocery</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=165';" >
+		<li >
+			<a href="item.php?categ=165"> <img src="categories_images/subcategoryicon1611154195.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Fight Corona</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=104';" >
+		<li >
+			<a href="item.php?categ=104"> <img src="categories_images/subcategoryicon1453387677.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Homeware supplies</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=107';" >
+		<li >
+			<a href="item.php?categ=107"> <img src="categories_images/subcategoryicon1452614472.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Phone & Computer</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=168';" >
+		<li >
+			<a href="item.php?categ=168"> <img src="categories_images/subcategoryicon1613643934.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Muller Koch</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=164';" >
+		<li >
+			<a href="item.php?categ=164"> <img src="categories_images/subcategoryicon1610441198.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Cleaning & Hygiene</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=105';" >
+		<li >
+			<a href="item.php?categ=105"> <img src="categories_images/subcategoryicon1452083260.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Health Products</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=141';" >
+		<li >
+			<a href="item.php?categ=141"> <img src="categories_images/subcategoryicon1610373167.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Makeup & Beauty</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=175';" >
+		<li >
+			<a href="item.php?categ=175"> <img src="categories_images/subcategoryicon1625145247.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Deva</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=174';" >
+		<li >
+			<a href="item.php?categ=174"> <img src="categories_images/subcategoryicon1625125512.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Wallpaper Stickers</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=127';" >
+		<li >
+			<a href="item.php?categ=127"> <img src="categories_images/subcategoryicon1452614865.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Baby & Toddler Products</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=134';" >
+		<li >
+			<a href="item.php?categ=134"> <img src="categories_images/subcategoryicon1458212054.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Home Improvement Tools</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=106';" >
+		<li >
+			<a href="item.php?categ=106"> <img src="categories_images/subcategoryicon1452156364.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Office & School Supplies</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=162';" >
+		<li >
+			<a href="item.php?categ=162"> <img src="categories_images/subcategoryicon1610446290.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Sports & Entertainment</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=111';" >
+		<li >
+			<a href="item.php?categ=111"> <img src="categories_images/subcategoryicon1452160398.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Toys & Hobbies</a>
+						</li>	
+	</ul>
+	<ul style='border-bottom:1px solid #e8e8e8;padding-bottom:2px;padding-left:5%;width:95%;' onclick="window.location.href='item.php?categ=129';" >
+		<li >
+			<a href="item.php?categ=129"> <img src="categories_images/subcategoryicon1610978821.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Festive & Party Supplies</a>
+						</li>	
+	</ul>
+	<ul  style="border-bottom:0px;padding-bottom:2px;padding-left:5%;width:95%;"  onclick="window.location.href='item.php?categ=124';" >
+		<li >
+			<a href="item.php?categ=124"> <img src="categories_images/subcategoryicon1488812359.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Clothing & Accessories</a>
+						</li>	
+	</ul>
+</div></div>
+<div class="full_div">
+    <img src="images/header_banner2.jpg" width='100%' />
+</div>
+<div id="header_middle" class="clearfix1">
+    <div id="header_middle_part1"  onmouseover="document.getElementById('categories_menu').style.display='block';"  >
+        <img src="images/categories_menu.jpg" align="center" id="header_middle_content" width="21px" height="25px" />
+    </div>
+    <div id="header_phone_fixed">
+        <div class="header_middle_part2 div_formobile_only">
+            <img src="images/categories_menu.jpg" class="pointer" align="center" width="30px" style="height:30px !important;padding:10px 0px 10px 0px !important;-webkit-user-select: none;  /* Chrome all / Safari all */-moz-user-select: none;     /* Firefox all */-ms-user-select: none;      /* IE 10+ */user-select: none;" onclick="document.getElementById('phone_menu').style.display='block';">
+        </div>
+        <!--images/deallogo.png-->
+        <div class="header_middle_part2" >
+            <img src="images/deallogo.png" style="width: 90%;height: 100px;padding: 10px 5% 0px 5%;cursor:pointer;" height="120px" onclick="window.location.href='item.php';">
+            <!--<img src="images/ramadanlogo.PNG" style="width: auto;height: 100px;padding: 10px 5% 0px 5%;cursor:pointer;" height="120px" onclick="window.location.href='item.php';">-->
+        </div>
+        <div id="header_middle_part3" >
+            <div class="topSearch">
+                <form action="item.php" method="post" id="search_form">
+                    <div class="search_box">
+                        <div class="searchBox">
+                            <div class="search_right">
+                                <span class="button_search" onclick="search_form.submit();"></span>
+                                <select name="categ">
+                                    <option value="">All Categories</option>
+                                                                            <option value="104" >Homeware supplies</option>
+                                                                            <option value="105" >Health Products</option>
+                                                                            <option value="106" >Office & School Supplies</option>
+                                                                            <option value="107" >Phone & Computer</option>
+                                                                            <option value="111" >Toys & Hobbies</option>
+                                                                            <option value="124" >Clothing & Accessories</option>
+                                                                            <option value="127" >Baby & Toddler Products</option>
+                                                                            <option value="129" >Festive & Party Supplies</option>
+                                                                            <option value="134" >Home Improvement Tools</option>
+                                                                            <option value="141" >Makeup & Beauty</option>
+                                                                            <option value="174" >Wallpaper Stickers</option>
+                                                                            <option value="175" >Deva</option>
+                                                                            <option value="162" >Sports & Entertainment</option>
+                                                                            <option value="163" >Grocery</option>
+                                                                            <option value="164" >Cleaning & Hygiene</option>
+                                                                            <option value="165" >Fight Corona</option>
+                                                                            <option value="168" >Muller Koch</option>
+                                                                            <option value="172" >Super Deal</option>
+                                                                    </select>
+                            </div>
+                            <div class="search_left">
+                                <input type="text" name="keyword" value="" Placeholder="Search By Item # or Keyword" id="search_text" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="header_middle_part4" >
+            <div class="cart-top pull-right">
+                <div id="cart" class="account_clearfix clearfix">
+                    <div class="quick-use">
+                                                    <a class="quick-login" href="login/" title="Sign in">Sign in <span>|</span></a>
+                            <a href="login/" title="Join Deal">Join Deal</a>
+                                            </div>
+                    <div class="account_visibility">
+                        <div class="account_content topBorderRed">
+                                                            <div class="block-account-content" style="background-color:white;font-weight:bold;" onclick="window.location.href='login/';">
+                                    Sign In / Sign Up
+                                </div>
+                                                        <div class="block-account-content" onclick="window.location.href='account/';">
+                                My Account
+                            </div>
+                            <div class="block-account-content" onclick="window.location.href='account/orders.php';">
+                                My Orders
+                            </div>
+                            <div class="block-account-content" onclick="window.location.href='account/shipping_addresses.php';">
+                                My Shipping Addresses
+                            </div>
+                            <div class="block-account-content" onclick="window.location.href='account/announces.php';">
+                                My Announces
+                            </div>
+                            <div class="block-account-content" onclick="window.location.href='account/wishlist.php';">
+                                My WishList
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-top pull-right" style="margin-top: 10px;" >
+                <div id="cart" class="clearfix">
+                    <div class="heading heading1">
+                        <div class="cart-inner">
+                            <a href="javascript:;" class="shopping-cart-icon">
+                                <input type="hidden" name="cart_total_num" id="cart_total_num" value="0" />
+                                <span id="cart-total">0</span><br>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="includes/add_to_cart.php" method="post" id="add_tocart_form" class="add_tocart_form" style="display:none;">
+                        <input type="hidden" name="add_cart_customized_name" id="add_cart_customized_name" Placeholder="Name Here" style="width:90%;" /><br /><br />
+                        <input type="hidden" name="add_cart_deal_id" id="add_cart_deal_id"/>
+                        <input type="hidden" name="add_cart_qtity_deal_id" id="add_cart_qtity_deal_id"/>
+                        <input type="submit" style="display:none;" id="submit_add_to_cart_form" />
+                    </form>
+                    <form action="includes/remove_item.php" method="post" class="remove_item_form" style="display:none;">
+                        <input type="hidden" name="item_cart_toremove" id="item_cart_toremove" />
+                        <input type="submit" style="display:none;" id="submit_remove_item_form" />
+                    </form>
+                    <div class="cart_visibility"  >
+                        <div class="cart_content">
+                            <div class="block-cart topBorderRed">
+                                
+	<div class="block-content" id="cart_block_content">
+	<input type="hidden" id="nb_of_deals_header_cart" name="nb_of_deals_header_cart" value="" />
+																	<p class="empty"><b>Bad News!</b> Your Shopping Cart Is Empty.</p>
+								
+										<a href="cart/" id="header_cart_viewall" class="full-div view-cart" style="display:none;text-align: right;text-decoration: none;color: #0072bc;float:right;">View All &raquo;</a><br />
+									<div class="summary" id="cart_header_summary" style="display:none;text-align:right;">
+										<p class="subtotal" style="text-align:right;">
+											<div class="full-div"><span class="label col-50 bold">Cart Subtotal:</span><span class="subtotal_price col-50"> L.L <i id="cart_header_subtotal" style="font-style:normal;">0</i></span></div>
+											<div class="full-div"><span class="label col-50 bold">Prepaid:</span><span class="subtotal_price col-50" id="cart_header_prepaid"> L.L <i id="cart_header_prepaid" style="font-style:normal;">0</i></span></div>
+											<div class="full-div"><span class="label col-50 bold">Total:</span><span class="subtotal_price col-50"> L.L <i id="cart_header_total" style="font-style:normal;">0</i></span></div>
+										</p>
+									</div>
+							<div class="actions" style="text-align:right;">
+								<button type="button" title="Checkout" class="button" onclick="window.location.href='cart/';"><span><span>Checkout</span></span></button><br />
+								<span class="view-cart" onclick="$('.cart_content').slideUp('fast');" style="float:left;margin-left: -20px;" title="View cart">close</span>
+							</div>
+						</div>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-top pull-right div_fornomobile_only">
+                <div id="cart" class="clearfix">
+                    <div class="quick-wishlist" onclick="window.location.href='account/wishlist.php';">
+                        <span class="quick-login account_block">Wish</span>
+                        <a href="" >List</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-top pull-right pt-10 pointer div_formobile_only">
+                <a id="cart" class="clearfix" href="account/wishlist.php">
+                    <i class="fa fa-heart-o pr-1" title="WishList" alt="WishList" aria-hidden="true" style="color:#e74848;line-height: 26px;font-size: 26px;"></i>
+                </a>
+            </div>
+            <div class="cart-top pull-right" style="margin-top: 10px;" >
+                <div id="cart" class="clearfix">
+                    <div class="heading">
+                        <div class="cart-inner" >
+                            <a class="shopping-cart-icon notifications-icon pointer" href='account/notifications.php' >
+                                <input type="hidden" name="notifications_num" id="notifications_num" value="0" />
+                                <span id="notification-total">0</span><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="cart-top pull-right pt-10 pointer">-->
+<!--                <a id="cart" class="clearfix" href="deal_news.php">-->
+<!--                    <i class="fa fa-newspaper-o pr-1" title="Deal News" alt="Deal News" aria-hidden="true" style="color:#e74848;line-height: 26px;font-size: 26px;"></i>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="cart-top pull-right pt-10 pointer">-->
+<!--                <a id="cart" class="clearfix" href="deal_tv.php" >-->
+<!--                    <img src="images/icon_tv.jpg" title="Deal TV" alt="Deal TV" />-->
+<!--                </a>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <div class="account_formobile_full full-div header_phone_categories">
+        <div class="left_div mb-5 pl-2"><a href='item.php'>All Deals</a></div><div class="left_div mb-5 pl-2"> <a href="item.php?c=5">Products</a></div><div class="left_div mb-5 pl-2"> <a href="item.php?categ=124">Clothing</a> </div><div class="left_div mb-5 pl-2"> <a href="item.php?categ=155" >Furniture</a></div><div class="left_div mb-5 pl-2"> <a href="item.php?categ=111" >Toys</a></div><div class="left_div mb-5 pl-2"> <a href="item.php?categ=104">Home & Garden</a> </div>
+            </div>
+</div>
+<div class="header_bottom clearfix1">
+    <div class="full-div">
+        <div class="header_bottom_left"  onmouseover="document.getElementById('categories_menu').style.display='block';" >
+            <div class="categories_content_title" >
+                <span>CATEGORIES</span>
+                <a href="all_categories.php" >See All &gt;</a>
+            </div>
+        </div>
+        <div class="header_bottom_right">
+<!--            <a href="item.php">ALL DEALS</a>-->
+            <!--            <a href="item.php?categ=124">Clothing</a>-->
+<!--            <a href="item.php?categ=155" >Furniture</a>-->
+<!--            <a href="item.php?categ=111" >Toys</a>-->
+<!--            <a href="item.php?categ=104">Home & Garden</a>-->
+                    </div>
+    </div>
+</div>
+    <div id="categories_menu" class="header_bottom clearfix1" style="display:none;position:absolute;background:transparent;" onmouseout="this.style.display='none';"  onmouseover="this.style.display='block';">
+        <div class="full-div" style="overflow:visible;">
+            <div class="header_bottom_left" style="background:white;">
+                <div class="category_list grayBorder">
+	<ul  style="border-top:0px;"  >
+		<li>
+			<a href="item.php?categ=172"> <img src="categories_images/subcategoryicon1617777926.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Super Deal</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=647">Value of the Day</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=163"> <img src="categories_images/subcategoryicon1585306808.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Grocery</a>
+										<ul style="min-height:336;" >
+															<li>
+									<a href="item.php?subcateg=653">Sweets And Snacks</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=650">Puck</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=644">Khayrat Al Atyab</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=642">Khalil</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=637">Bellvie</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=636">Nestlé</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=629">Chtoura Fields</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=630">Ankara</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=631">Holiday</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=632">Mahnam & Elite</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=633">Al Osra</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=654">Kelloggs</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=652">puidor</a>
+								</li>
+															<li>
+									<a href="item.php?categ=163">See More</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=165"> <img src="categories_images/subcategoryicon1611154195.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Fight Corona</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=619">products</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=104"> <img src="categories_images/subcategoryicon1453387677.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Homeware supplies</a>
+										<ul style="min-height:192;" >
+															<li>
+									<a href="item.php?subcateg=222">Cooking & Baking</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=269">Catering Supplies &Tableware</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=626">kitchen Accessories</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=232">Beverages & Glassware</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=215">Home Decor</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=213">Home Storage & Organization</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=208">Bathroom Products</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=627">Covers & Pillows</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=107"> <img src="categories_images/subcategoryicon1452614472.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Phone & Computer</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=290">Accessories</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=168"> <img src="categories_images/subcategoryicon1613643934.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Muller Koch</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=628">Muller Koch</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=164"> <img src="categories_images/subcategoryicon1610441198.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Cleaning & Hygiene</a>
+										<ul style="min-height:144;" >
+															<li>
+									<a href="item.php?subcateg=617">Sanitizers</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=614">Cleaning Agents</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=618">Personal Hygiene</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=616">Cleaning Tools</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=613">Air Fresheners</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=611">Laundry Products</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=105"> <img src="categories_images/subcategoryicon1452083260.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Health Products</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=599">Health Tools</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=141"> <img src="categories_images/subcategoryicon1610373167.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Makeup & Beauty</a>
+										<ul style="min-height:144;" >
+															<li>
+									<a href="item.php?subcateg=413">Face</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=412">Eyes</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=303">Hair Care & Styling</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=411">Makeup Remover</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=410">Lips</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=409">nailpolish</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=175"> <img src="categories_images/subcategoryicon1625145247.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Deva</a>
+						</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=174"> <img src="categories_images/subcategoryicon1625125512.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Wallpaper Stickers</a>
+						</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=127"> <img src="categories_images/subcategoryicon1452614865.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Baby & Toddler Products</a>
+										<ul style="min-height:120;" >
+															<li>
+									<a href="item.php?subcateg=641">wipes</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=640">Diapers</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=582">Perfume</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=295">Baby Care</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=545">Baby Feeding Gadgets</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=134"> <img src="categories_images/subcategoryicon1458212054.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Home Improvement Tools</a>
+										<ul style="min-height:72;" >
+															<li>
+									<a href="item.php?subcateg=605">Outdoor & Garden Supplies</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=596">Lights & Electrical supplies</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=595">Tools</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=106"> <img src="categories_images/subcategoryicon1452156364.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Office & School Supplies</a>
+										<ul style="min-height:48;" >
+															<li>
+									<a href="item.php?subcateg=603">Stationary</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=548">School Bags</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=162"> <img src="categories_images/subcategoryicon1610446290.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Sports & Entertainment</a>
+										<ul style="min-height:48;" >
+															<li>
+									<a href="item.php?subcateg=643">water sports</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=610">Fitness Equipments</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=111"> <img src="categories_images/subcategoryicon1452160398.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Toys & Hobbies</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=257">kids toys</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  >
+		<li>
+			<a href="item.php?categ=129"> <img src="categories_images/subcategoryicon1610978821.jpg" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Festive & Party Supplies</a>
+										<ul style="min-height:24;" >
+															<li>
+									<a href="item.php?subcateg=312">Birthday Party Supplies</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+	<ul  style="border-bottom:0px;"  >
+		<li>
+			<a href="item.php?categ=124"> <img src="categories_images/subcategoryicon1488812359.png" width="15px" height="15px" align="center" style="padding-right: 10px;"/>Clothing & Accessories</a>
+										<ul style="min-height:96;" >
+															<li>
+									<a href="item.php?subcateg=320">Women Clothing</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=590">Men Clothing</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=587">Bags</a>
+								</li>
+															<li>
+									<a href="item.php?subcateg=585">Hats & Scarves</a>
+								</li>
+													</ul>
+							</li>	
+	</ul>
+</div>            </div>
+            <div class="header_bottom_right" style="display:none;">
+            </div>
+        </div>
+    </div>
+<div class="position_relative" onclick="window.location.href='account/browsing_history.php';">
+    <span data-role="show" class="show_history">Recently Viewed</span>
+</div><div class="page" style="padding-top:0px;">
+    <div class="full-div" style="overflow:visible;">
+                        <div class="full-div">
+                        <div class="full-div navigation_bar" style="line-height:16px;">
+        <a href="index.php">
+            <i class="fa fa-home"></i> Homepage
+        </a>&nbsp;>&nbsp;
+        <a href="item.php?c=5">
+            Products        </a>>&nbsp;
+        <a href="item.php?categ=104">
+            Homeware supplies        </a>>&nbsp;
+        <a href="item.php?subcateg=269">
+            Catering Supplies &Tableware        </a>>&nbsp;
+        28cm Wooden Pizza Serving Tray Dinner Board    </div>
+<br />    <div class="full-div account_formobile_full">
+        <div class="col-38 account_formobile_full">
+            <center>
+                <span class="item_image_arrow" style="float:left;" onclick="var newid=document.getElementById('used_image').value;if(newid==1) newid=3; else newid=parseInt(newid)-1;document.getElementById('used_image').value=newid;document.getElementById('item_image').src=document.getElementById('item_image'+newid).src;">&#10092;</span>
+                                    <div class="discount">
+                        <span>-&nbsp;21%&nbsp;OFF</span>
+                    </div>
+                                                <img src="dealuploads/img-28cm-Wooden-Pizza-Serving-Tray-Dinner-Board-1569577922.jpg" alt="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" title="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" width="80%" height="auto" border='0' align="center" id="item_image" />
+                <span class="item_image_arrow" style="float:right;" onclick="var newid=document.getElementById('used_image').value;if(newid==3) newid=1; else newid=parseInt(newid)+1;document.getElementById('used_image').value=newid;document.getElementById('item_image').src=document.getElementById('item_image'+newid).src;">&#10093;</span>
+                <br /><br />
+                <input type="hidden" name="used_image" id="used_image" value="1" />
+                <img src="dealuploads/img-28cm-Wooden-Pizza-Serving-Tray-Dinner-Board-1569577922.jpg" width="50px" height="50px" id="item_image1" alt="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" title="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" style="cursor:pointer;border:1px solid gray;" onmouseover="document.getElementById('item_image').src=this.src;document.getElementById('used_image').value=1;" />&nbsp;                                    <img src="dealuploads/moreimgd3.11569577942.jpg" id="item_image2" width="50px" height="50px" alt="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" title="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" style="cursor:pointer;border:1px solid gray;" onmouseover="document.getElementById('used_image').value=2;document.getElementById('item_image').src=this.src;" />&nbsp;
+                                    <img src="dealuploads/moreimgd3.21569577942.jpg" id="item_image3" width="50px" height="50px" alt="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" title="28cm+Wooden+Pizza+Serving+Tray+Dinner+Board" style="cursor:pointer;border:1px solid gray;" onmouseover="document.getElementById('used_image').value=3;document.getElementById('item_image').src=this.src;" />&nbsp;
+                                <!-- social media -->
+                <div class="full-div">
+                    <div class="col-20 div_fornomobile_only">&nbsp;</div>
+                    <div class="col-25 account_formobile_full fb-like" data-href='/item.php?i=57774&t=28cm Wooden Pizza Se&' data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> &nbsp; <div class="col-15 account_formobile_full"><a href="https://twitter.com/share" class="twitter-share-button"{count} data-hashtags="deal.com.lb">Tweet</a></div>
+                    <div class="col-20 account_formobile_full mb-5"><a data-pin-do="buttonPin" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url=http://www.deal.com.lb/item.php?i=57774&t=28cm Wooden Pizza Se&media=http://www.deal.com.lb/&description=28cm+Wooden+Pizza+Serving+Tray+Dinner+Board"></a></div>
+                    <div class="col-20 div_fornomobile_only">&nbsp;</div>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+                    <!-- end social media -->
+                </div>
+            </center>
+        </div>
+        <div class="col-35 pl-2 pr-3 inner_item_additem account_formobile_full">
+            <h3>28cm Wooden Pizza Serving Tray Dinner Board</h3>
+            <div class="full-div">
+                <div class="col-45 pt-10" >
+                    <h4 class="no_margin"><b class="blue-text">Deal Id: </b>#57774</h4>
+                </div>
+                <div class="col-45 pt-10 right_div">
+                                            <a href='https://api.whatsapp.com/send?phone=+96170221998&text=%2357774 - 28cm Wooden Pizza Serving Tray Dinner Board - http://www.deal.com.lb/%2Fitem.php%3Fi%3D57774%26t%3D28cm+Wooden+Pizza+Se' class='black-text' target="_blank"><img src="images/whatsapp.png" height="25px" border='0' valign="middle"/><span style="text-decoration: underline;">Order By Whatsapp</span></a>
+                                    </div>
+            </div>
+                                    <div class="full-div">
+                <div class="left_div">
+                    <h2><b  >L.L 147 525</b></h2>
+                </div>
+                <div class="left_div ml-2">
+                    	<h4><s class="gray-text small_font">L.L 186 900</s></h4>                 </div>
+                <div class="right_div" style="color:#333;">
+                    <h4 style="font-weight:normal;">
+                        <i class='fa fa-check-circle' style='color:green;'></i> In Stock                    </h4>
+                </div>
+            </div>
+            <div class="add_to_wishList" onclick=" window.location.href='login/'; " >
+                <img src="images/wishlist_icon.jpg" height="12px" width="12px" align="center" /><span id="add_wishlist_text_57774"> Add To WishList </span>
+            </div>
+            <div class="add_to_wishList mt-7" style="font-size: 15px;" onclick="window.open('https://www.deal.com.lb/applanding.php');">
+                <i class="fa fa-download red-text"></i>&nbsp;Download our App and get it for 147 000 L.L            </div>
+            <br />
+            <div class="full-div inner_item_details_info">
+                <div class="col-88 pl-2">
+                    <h4>Description</h4>
+                </div>
+                <div class="col-10">
+                    <i class="fa fa-plus-circle right_div" style="cursor:pointer;display:none;" id="add_desc" onclick="this.style.display='none';document.getElementById('remove_desc').style.display='block';document.getElementById('inner_item_desc').style.display='block';"></i>
+                    <i class="fa fa-minus-circle right_div" style="cursor:pointer;" id="remove_desc" onclick="this.style.display='none';document.getElementById('add_desc').style.display='block';document.getElementById('inner_item_desc').style.display='none';"></i>
+                </div>
+            </div>
+            <div class="inner_item_details_sub_info" id="inner_item_desc">
+                28cm Wooden Pizza Serving Tray Dinner Board<br /><br /><b>Weight: 0.7 KG</b>            </div>
+            <div class="full-div inner_item_details_info">
+                <div class="col-88 pl-2">
+                    <h4>Rules</h4>
+                </div>
+                <div class="col-10">
+                    <i class="fa fa-plus-circle right_div" style="cursor:pointer;" id="add_rules" onclick="this.style.display='none';document.getElementById('remove_rules').style.display='block';document.getElementById('inner_item_rules').style.display='block';"></i>
+                    <i class="fa fa-minus-circle right_div" style="cursor:pointer;display:none;" id="remove_rules" onclick="this.style.display='none';document.getElementById('add_rules').style.display='block';document.getElementById('inner_item_rules').style.display='none';"></i>
+                </div>
+            </div>
+            <div class="inner_item_details_sub_info" id="inner_item_rules" style="display:none;" >
+                - Deal is valid immediately after purchase <br>- Delivery of the products is available for an extra charge.<br><span style='color:red;font-weight:bold;'>-The Estimated Delivery time will be between 3 to 7 working days.</span><br>- You can buy several deals.<br>- Limited Quantity.<br><span style='color:red;font-weight:bold;'>- Items are only booked once payments are confirmed.</span><br>- Paid Vouchers or Items Gift  Cannot be exchanged with any other different Item.<br><span style='color:red;font-weight:bold;'>- No Refund.</span><br><span style='color:red;font-weight:bold;'>- This deal will end early if the quantity ends.</span>            </div>
+            <div class="full-div inner_item_details_info">
+                <div class="col-88 pl-2">
+                    <h4>Business Info</h4>
+                </div>
+                <div class="col-10">
+                    <i class="fa fa-plus-circle right_div" style="cursor:pointer;" id="add_bi" onclick="this.style.display='none';document.getElementById('remove_bi').style.display='block';document.getElementById('inner_item_bi').style.display='block';"></i>
+                    <i class="fa fa-minus-circle right_div" style="cursor:pointer;display:none;" id="remove_bi" onclick="this.style.display='none';document.getElementById('add_bi').style.display='block';document.getElementById('inner_item_bi').style.display='none';"></i>
+                </div>
+            </div>
+            <div class="inner_item_details_sub_info" id="inner_item_bi" style="display:none;">
+                Deal Shop <br /><span class='iphone_nb'>01740998</span><br />Hamra, Karakas, Near Yacoubian Building<br /><i class='fa fa-facebook-square blue-text'></i> <a href='https://www.facebook.com/Deal.com.lb' target='_blank' class='black-text' >Deal Shop On Facebook</a> <br /><i class='fa fa-instagram red-text'></i> <a href='https://instagram.com/deal.com.lb' target='_blank' class='black-text' >Deal Shop On Instagram</a> <br /><i class='fa fa-twitter blue-text'></i> <a href='https://twitter.com/lebanondeals' target='_blank' class='black-text' >Deal Shop On Twitter</a> <br /><i class='fa fa-tiktok black-text'></i> <a href='https://vm.tiktok.com/ZSJdvmFdy/' target='_blank' class='black-text' >Deal Shop On Tiktok</a> <br />                <br />
+            </div>
+                    </div>
+        <div class="col-20 pl-1 pr-1 grayBorder pb-10 pt-10 center account_formobile_full">
+                                    <span id="error_msg" style="display:none;color:red;"></span>
+                            <br/>
+                                    <div class="full-div pt-10">
+                        <div class="full-div">
+                            <input type="hidden" name="add_cart_this_deal_id" id="add_cart_this_deal_id"
+                                   value="57774"/>
+                            <input type="hidden" name="add_cart_customized_name" id="add_cart_customized_name"
+                                   value=""/>
+
+                            <button class="add_tocart_button ml-2" id="inner_item_addcart_button" id="add_tocart_button"
+                                    onclick="window.location.href='login/';                                            "><i class="fa fa-shopping-cart"
+                                                 style="border-right: 1px solid white;padding-right: 10px;margin-right:10px;"></i>&nbsp;ADD TO CART                             </button>
+                        </div>
+                        <br/>
+                        <div class="full-div">
+                            <button id="inner_item_checkout_button" class="add_tocart_button ml-2"
+                                    style='background:#0072bc;' id="view_tocart_button"
+                                    onclick="window.location.href='login/';"><i class="fa fa-shopping-cart"
+                                             style="border-right: 1px solid white;padding-right: 10px;margin-right:10px;"></i>&nbsp;CHECKOUT
+                            </button>
+                        </div>
+                    </div>
+                        </div>
+    </div>
+    <br /><br />
+    <div class='recommended_items_account'>
+        <div class='recommended_header'>
+            <h2><i>RELATED</i> DEALS</h2>
+        </div>
+        <div class='full-div recommended_div'><center>									<div class='col-23 recommended_item ' >
+						<a href='item.php?i=46610&t=Butterfly+Porcelain+' >
+																<div class="discount">
+										<span  >-&nbsp;33%&nbsp;OFF</span>
+									</div>
+							<img src='dealuploads/img-Butterfly-Porcelain-White-Dinner-Plates-10-Pcs-Snack-Set-1613040879.jpg' id="listing_item_46610" width='100%'  height='330px'  border='0' class="img_recommended_item" alt="Butterfly Porcelain White Dinner Plates 10 Pcs Snack Set" title="Butterfly Porcelain White Dinner Plates 10 Pcs Snack Set" />
+						</a>
+							<div class="full-div recommended_item_options div_fornomobile_only " ><center>
+														</center></div>
+						<a href='item.php?i=46610&t=Butterfly+Porcelain+' >
+							<div class="recommended_item_title"> Butterfly Porcelain White Dinner Plates 10 Pcs Snack Set </div>
+						</a>
+							<div class="full-div">
+								<div class="col-50">
+									<span class="recommended_item_id"><b>Deal Id:</b> #46610</span>
+								</div>
+								<div class="col-50">
+																	</div>
+							</div>
+							<div class='full-div'>
+								<div class='col-50'>
+									<div class="price">
+																				<span  >
+<!--                                            $ -->                                        </span><br />																			<del >
+<!--                                            $ -->                                        </del>
+																											</div>
+								</div>
+								<div class='col-50'>
+									<div class="price center">
+																				<span style='float:inherit;' >L.L 209 895</span>																			<del style='float:inherit;'>L.L 312 900</del>
+																											</div>
+								</div>
+							</div>
+							<div class="full-div">
+								<div class='col-50'>
+										<a href="https://api.whatsapp.com/send?phone=+96170221998&text=%2346610 - Butterfly Porcelain White Dinner Plates 10 Pcs Sna - http://www.deal.com.lb/item.php%3Fi%3D46610%26t%3DButterfly%2BPorcelain%2B" class='gray-text pt-5 pb-10' target="_blank" ><i class="fa fa-whatsapp whatsapp_color"></i> Order By Whatsapp</a>
+								</div>
+								<div class='col-50'>
+									<div class="add_to_wishList pb-5" onclick=" window.location.href='login/'; " >
+										<i class="fa fa-heart-o red-text"></i><span id="add_wishlist_text_46610"> Add To WishList </span>
+									</div>
+								</div>
+							</div>
+														<div class="full-div" >
+																	<div class="add_to_wishList add_tocart_text pt-10 pb-10 pl-5 pr-5 col-90" onclick=" window.location.href='login/'; " >
+										<span id="add_tocart_text_46610"> Add To Cart</span>									</div>
+							</div>
+												</div>
+			<script>
+					function added_tocart(value,deal_id){
+						if(value==1)
+							document.getElementById('add_tocart_text_'+deal_id).innerHTML="<span id='add_tocart_text_"+deal_id+"' >Update Cart</span>";
+					}
+					function added_wishlist(value,deal_id){
+						if(value==1)
+							document.getElementById('add_wishlist_text_'+deal_id).innerHTML="<span id='add_wishlist_text_"+deal_id+"' >Added to <a href='account/wishlist.php' class='blue-text'>wish list</a></span>";
+					}
+				</script>									<div class='col-23 recommended_item ' >
+						<a href='item.php?i=56905&t=Soup+Serving+Pot++Po' >
+																<div class="discount">
+										<span  >-&nbsp;26%&nbsp;OFF</span>
+									</div>
+							<img src='dealuploads/img-Soup-Serving-Pot--Porcelain-1558517809.jpg' id="listing_item_56905" width='100%'  height='330px'  border='0' class="img_recommended_item" alt="Soup Serving Pot  Porcelain" title="Soup Serving Pot  Porcelain" />
+						</a>
+							<div class="full-div recommended_item_options div_fornomobile_only " ><center>
+														</center></div>
+						<a href='item.php?i=56905&t=Soup+Serving+Pot++Po' >
+							<div class="recommended_item_title"> Soup Serving Pot  Porcelain </div>
+						</a>
+							<div class="full-div">
+								<div class="col-50">
+									<span class="recommended_item_id"><b>Deal Id:</b> #56905</span>
+								</div>
+								<div class="col-50">
+									<i class='fa fa-clock-o brique-text'></i> Ending Soon								</div>
+							</div>
+							<div class='full-div'>
+								<div class='col-50'>
+									<div class="price">
+																				<span  >
+<!--                                            $ -->                                        </span><br />																			<del >
+<!--                                            $ -->                                        </del>
+																											</div>
+								</div>
+								<div class='col-50'>
+									<div class="price center">
+																				<span style='float:inherit;' >L.L 132 825</span>																			<del style='float:inherit;'>L.L 178 500</del>
+																											</div>
+								</div>
+							</div>
+							<div class="full-div">
+								<div class='col-50'>
+										<a href="https://api.whatsapp.com/send?phone=+96170221998&text=%2356905 - Soup Serving Pot  Porcelain - http://www.deal.com.lb/item.php%3Fi%3D56905%26t%3DSoup%2BServing%2BPot%2B%2BPo" class='gray-text pt-5 pb-10' target="_blank" ><i class="fa fa-whatsapp whatsapp_color"></i> Order By Whatsapp</a>
+								</div>
+								<div class='col-50'>
+									<div class="add_to_wishList pb-5" onclick=" window.location.href='login/'; " >
+										<i class="fa fa-heart-o red-text"></i><span id="add_wishlist_text_56905"> Add To WishList </span>
+									</div>
+								</div>
+							</div>
+														<div class="full-div" >
+																	<div class="add_to_wishList add_tocart_text pt-10 pb-10 pl-5 pr-5 col-90" onclick=" window.location.href='login/'; " >
+										<span id="add_tocart_text_56905"> Add To Cart</span>									</div>
+							</div>
+												</div>
+			<script>
+					function added_tocart(value,deal_id){
+						if(value==1)
+							document.getElementById('add_tocart_text_'+deal_id).innerHTML="<span id='add_tocart_text_"+deal_id+"' >Update Cart</span>";
+					}
+					function added_wishlist(value,deal_id){
+						if(value==1)
+							document.getElementById('add_wishlist_text_'+deal_id).innerHTML="<span id='add_wishlist_text_"+deal_id+"' >Added to <a href='account/wishlist.php' class='blue-text'>wish list</a></span>";
+					}
+				</script>									<div class='col-23 recommended_item ' >
+						<a href='item.php?i=65420&t=6+pcs+stainless+stee' >
+																<div class="discount">
+										<span  >-&nbsp;25%&nbsp;OFF</span>
+									</div>
+							<img src='dealuploads/img-6-pcs-stainless-steel-spotted-dotted-forks-1625832207.jpg' id="listing_item_65420" width='100%'  height='330px'  border='0' class="img_recommended_item" alt="6 pcs stainless steel spotted dotted forks" title="6 pcs stainless steel spotted dotted forks" />
+						</a>
+							<div class="full-div recommended_item_options div_fornomobile_only " ><center>
+														</center></div>
+						<a href='item.php?i=65420&t=6+pcs+stainless+stee' >
+							<div class="recommended_item_title"> 6 pcs stainless steel spotted dotted forks </div>
+						</a>
+							<div class="full-div">
+								<div class="col-50">
+									<span class="recommended_item_id"><b>Deal Id:</b> #65420</span>
+								</div>
+								<div class="col-50">
+									<i class='fa fa-tags brique-text'></i> New Arrival								</div>
+							</div>
+							<div class='full-div'>
+								<div class='col-50'>
+									<div class="price">
+																				<span  >
+<!--                                            $ -->                                        </span><br />																			<del >
+<!--                                            $ -->                                        </del>
+																											</div>
+								</div>
+								<div class='col-50'>
+									<div class="price center">
+																				<span style='float:inherit;' >L.L 94 500</span>																			<del style='float:inherit;'>L.L 126 000</del>
+																											</div>
+								</div>
+							</div>
+							<div class="full-div">
+								<div class='col-50'>
+										<a href="https://api.whatsapp.com/send?phone=+96170221998&text=%2365420 - 6 pcs stainless steel spotted dotted forks - http://www.deal.com.lb/item.php%3Fi%3D65420%26t%3D6%2Bpcs%2Bstainless%2Bstee" class='gray-text pt-5 pb-10' target="_blank" ><i class="fa fa-whatsapp whatsapp_color"></i> Order By Whatsapp</a>
+								</div>
+								<div class='col-50'>
+									<div class="add_to_wishList pb-5" onclick=" window.location.href='login/'; " >
+										<i class="fa fa-heart-o red-text"></i><span id="add_wishlist_text_65420"> Add To WishList </span>
+									</div>
+								</div>
+							</div>
+														<div class="full-div" >
+																	<div class="add_to_wishList add_tocart_text pt-10 pb-10 pl-5 pr-5 col-90" onclick=" window.location.href='login/'; " >
+										<span id="add_tocart_text_65420"> Add To Cart</span>									</div>
+							</div>
+												</div>
+			<script>
+					function added_tocart(value,deal_id){
+						if(value==1)
+							document.getElementById('add_tocart_text_'+deal_id).innerHTML="<span id='add_tocart_text_"+deal_id+"' >Update Cart</span>";
+					}
+					function added_wishlist(value,deal_id){
+						if(value==1)
+							document.getElementById('add_wishlist_text_'+deal_id).innerHTML="<span id='add_wishlist_text_"+deal_id+"' >Added to <a href='account/wishlist.php' class='blue-text'>wish list</a></span>";
+					}
+				</script>									<div class='col-23 recommended_item ' >
+						<a href='item.php?i=57608&t=crystal+glass+ware' >
+																<div class="discount">
+										<span  >-&nbsp;14%&nbsp;OFF</span>
+									</div>
+							<img src='dealuploads/img-crystal-glass-ware-1563522619.jpg' id="listing_item_57608" width='100%'  height='330px'  border='0' class="img_recommended_item" alt="crystal glass ware" title="crystal glass ware" />
+						</a>
+							<div class="full-div recommended_item_options div_fornomobile_only " ><center>
+														</center></div>
+						<a href='item.php?i=57608&t=crystal+glass+ware' >
+							<div class="recommended_item_title"> crystal glass ware </div>
+						</a>
+							<div class="full-div">
+								<div class="col-50">
+									<span class="recommended_item_id"><b>Deal Id:</b> #57608</span>
+								</div>
+								<div class="col-50">
+									<i class='fa fa-tags brique-text'></i> New Arrival								</div>
+							</div>
+							<div class='full-div'>
+								<div class='col-50'>
+									<div class="price">
+																				<span  >
+<!--                                            $ -->                                        </span><br />																			<del >
+<!--                                            $ -->                                        </del>
+																											</div>
+								</div>
+								<div class='col-50'>
+									<div class="price center">
+																				<span style='float:inherit;' >L.L 126 525</span>																			<del style='float:inherit;'>L.L 147 000</del>
+																											</div>
+								</div>
+							</div>
+							<div class="full-div">
+								<div class='col-50'>
+										<a href="https://api.whatsapp.com/send?phone=+96170221998&text=%2357608 - crystal glass ware - http://www.deal.com.lb/item.php%3Fi%3D57608%26t%3Dcrystal%2Bglass%2Bware" class='gray-text pt-5 pb-10' target="_blank" ><i class="fa fa-whatsapp whatsapp_color"></i> Order By Whatsapp</a>
+								</div>
+								<div class='col-50'>
+									<div class="add_to_wishList pb-5" onclick=" window.location.href='login/'; " >
+										<i class="fa fa-heart-o red-text"></i><span id="add_wishlist_text_57608"> Add To WishList </span>
+									</div>
+								</div>
+							</div>
+														<div class="full-div" >
+																	<div class="add_to_wishList add_tocart_text pt-10 pb-10 pl-5 pr-5 col-90" onclick=" window.location.href='login/'; " >
+										<span id="add_tocart_text_57608"> Add To Cart</span>									</div>
+							</div>
+												</div>
+			<script>
+					function added_tocart(value,deal_id){
+						if(value==1)
+							document.getElementById('add_tocart_text_'+deal_id).innerHTML="<span id='add_tocart_text_"+deal_id+"' >Update Cart</span>";
+					}
+					function added_wishlist(value,deal_id){
+						if(value==1)
+							document.getElementById('add_wishlist_text_'+deal_id).innerHTML="<span id='add_wishlist_text_"+deal_id+"' >Added to <a href='account/wishlist.php' class='blue-text'>wish list</a></span>";
+					}
+				</script></center></div><br />    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+	<div class="footer_container footer_container_top">
+		<div class="site-item" style="border-left: 1px solid #eee;">
+			 <i class="footer_icon i-great"></i>
+			 <h3>Great Value</h3>
+			 <p>We offer competitive prices on our 100 million plus product range.</p>
+		</div>
+		<div class="site-item">
+			 <i class="footer_icon i-delivery"></i>
+			 <h3>Worldwide Delivery</h3>
+			 <p>We ship to over 200 countries &amp; regions.</p>
+		</div>
+		<div class="site-item">
+			<i class="footer_icon i-payment"></i>
+			<h3>Safe Payment</h3>
+			<p>Pay with the world's most popular and secure payment methods.</p>
+		</div>
+		<div class="site-item">
+			<i class="footer_icon i-confidence"></i>
+			<h3>Shop with Confidence</h3>
+			<p>Our Buyer Protection covers your purchase from click to delivery.</p>
+		</div>
+		<div class="site-item">
+			<i class="footer_icon i-help"></i>
+			<h3>Help Center</h3>
+			<p>Professional assistance for a smooth shopping experience.</p>
+		</div>
+		<div class="site-item">
+			<i class="footer_icon i-cashback"></i>
+			<h3>Cashback</h3>
+			<p>Get rewarded... Get CashBack on everything! Save More On Everything!</p>
+		</div>
+	</div>
+	<div class="footer_container footer_container_top" style="text-align:left;border-bottom:0px;padding-top:10px;">
+			<div class="full-div" >
+				<b>Deal Categories</b> <br />
+				<a class='footer_categories_link' href='item.php?categ=172'> Super Deal </a>,<a class='footer_categories_link' href='item.php?categ=163'> Grocery </a>,<a class='footer_categories_link' href='item.php?categ=165'> Fight Corona </a>,<a class='footer_categories_link' href='item.php?categ=104'> Homeware supplies </a>,<a class='footer_categories_link' href='item.php?categ=107'> Phone & Computer </a>,<a class='footer_categories_link' href='item.php?categ=168'> Muller Koch </a>,<a class='footer_categories_link' href='item.php?categ=164'> Cleaning & Hygiene </a>,<a class='footer_categories_link' href='item.php?categ=105'> Health Products </a>,<a class='footer_categories_link' href='item.php?categ=141'> Makeup & Beauty </a>,<a class='footer_categories_link' href='item.php?categ=175'> Deva </a>,<a class='footer_categories_link' href='item.php?categ=174'> Wallpaper Stickers </a>,<a class='footer_categories_link' href='item.php?categ=127'> Baby & Toddler Products </a>,<a class='footer_categories_link' href='item.php?categ=134'> Home Improvement Tools </a>,<a class='footer_categories_link' href='item.php?categ=106'> Office & School Supplies </a>,<a class='footer_categories_link' href='item.php?categ=162'> Sports & Entertainment </a>,<a class='footer_categories_link' href='item.php?categ=111'> Toys & Hobbies </a>,<a class='footer_categories_link' href='item.php?categ=129'> Festive & Party Supplies </a>,<a class='footer_categories_link' href='item.php?categ=124'> Clothing & Accessories </a>			</div>
+	</div>
+	<div class="footer_container" style="text-align:left;border-top:0px;">
+		<div class="footer_subsc">
+			<div class="alert-subscribe-form" id="alert-subscribe-form" data-failtips="Oops, subscribe unsuccessful. Please try again." data-successtips="<em>Congratulations!</em>You have successfully subscribed." data-emailerror="Invalid email address. Please try again." data-widget-cid="widget-31">
+				<h3>Subscription</h3>
+				<form action="/item.php#email-error-subscriber" id="form_subscription" method="post">
+				<input type="text" name="subscriber_email" id="subscriber_email" placeholder="Please enter your email" class="alert-subscribe-input" data-role="input">
+				<input type="button" onclick="if(subscription_validate()) form_subscription.submit();" value="Subscribe" class="alert-subscribe-submit" data-role="submit">
+				<div class="email-error-tips email-error-tips brique-text" id="email-error-subscriber"></div>
+				</form>
+					<p class="tips">Register now to get updates on promotions and coupons.</p>
+			</div>
+			<div class="app-box">
+				<div class="social-networks">
+					<h3>Stay Connected</h3>
+					<div class="foot-sns-box">
+						<a  target="_blank" class="fb" href="https://www.facebook.com/deal.com.lb"></a>
+						<a  target="_blank" href="https://twitter.com/lebanondeals" class="twitter"></a>
+						<a  target="_blank" href="https://instagram.com/deal.com.lb" class="instagram"></a>
+						<a  target="_blank" href="https://pinterest.com/dealcomlb" class="pinterest"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_links">
+			<h3 class="f-link-header">How to Buy</h3>
+			<ul class="f-link-list">
+				<li><a href="login/" >Create an Account</a></li>
+				<li><a href="footer/payment_methods.php" >Payment Methods</a></li>
+				<li><a href="footer/best_rates.php" >Best Rates</a></li>
+				<li><a href="footer/how_it_works.php" >How It Works</a></li>
+				<li><a href="footer/faq.php" >Frequently Asked Questions</a></li>
+			</ul>
+		</div>
+		<div class="footer_links">
+			<h3 class="f-link-header">Customer Service</h3>
+			<ul class="f-link-list">
+				<li><a href="footer/contact_us.php" >Contact Us</a></li>
+				<li><a href="footer/about_us.php" >About Us</a></li>
+				<li><a href="footer/careers.php" >Careers</a></li>
+				<li><a href="footer/advertisement.php" >Advertise On Deal</a></li>
+				<li><a href="footer/top_buyers.php" >Top Buyers</a></li>
+				<li><a href="merchant/login.php" >Merchant Center</a></li>
+			</ul>
+		</div>
+		<div class="footer_links">
+			<h3 class="f-link-header">Policies</h3>
+			<ul class="f-link-list">
+				<li><a href="footer/policies.php?link=refund" >Return & Refund Policy</a></li>
+				<li><a href="footer/policies.php?link=privacy" >Privacy Policy</a></li>
+				<li><a href="footer/policies.php?link=shipping" >Shipping Policy</a></li>
+				<li><a href="footer/cashback.php" >Cashback Policy</a></li>
+				<li><a href="footer/policies.php?link=terms" >Terms of Use</a></li>
+				<li><a href="user_sitemap.php" >Sitemap</a></li>
+			</ul>
+		</div>
+		<div class="footer_links">
+			<h3 class="f-link-header">Extra Services</h3>
+			<ul class="f-link-list">
+				<li><a href="extra_services/mecanique_fees.php" >Mechanic Fees</a></li>
+				<li><a href="extra_services/speed_tickets.php" >Speed Tickets</a></li>
+				<li><a href="extra_services/parkmeter_tickets.php" >Parkmeter Tickets</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="row " style="background: #e62e04;padding: 20px 30px;">
+        <div class="col-md-12 col-lg-12 col-sm-6 text-center center" style="display: flex;justify-content: center;">
+            <a href="https://apps.apple.com/us/app/deal-com-lb/id1547417138" target="_blank"><img src="images/appstore.png" style="height: 55px;width: auto;max-width:100%;object-fit:contain;"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.deal.deallb" target="_blank"><img src="images/google-play.png" style="height: 55px;width: auto;max-width:100%;object-fit:contain;"></a>
+        </div>
+    </div>
+	<div class="footer_container footer_copywrite">
+	&copy; 2010-2021 <b>Deal.com.lb</b> All rights reserved.	
+	</div>
+</div>
+<!--
+<script src="js/simple-slideshow.js?v=1.01"></script>
+<script src="js/simple-slideshow-jquery.js?v=1.01"></script>
+-->
+<a href="#" class='black-text scrollup'>Back to top</a>
+<!--<a href="item.php?volueOfDay=1&" class='black-text scrollup_vod'>Value Of Day</a>-->
+<!--<a href="item.php?BuyGetOne=1&" class='black-text scrollup_bgo'>Buy 1 Get 1</a>-->
+<!--<a href="office_items.php" class='black-text scrollup_ocl'>Office Clearout</a>-->
+<!--<a href="deal_tv.php" class='black-text scrollup_tv'>Deal TV</a>-->        <script>
+            function added_wishlist(value,deal_id){
+                if(value==1)
+                    document.getElementById('add_wishlist_text_'+deal_id).innerHTML="<span id='add_wishlist_text_'"+deal_id+" style='background:white;' >Added to <a href='account/wishlist.php' class='blue-text'>your wish list</a></span>";
+            }
+
+            var searching = false;
+            $(document).ready(function(){
+                function loadData(){
+                    if (!searching) { // only initiate a new ajax request if this variable is false
+                        searching = true; // set variable to true
+                        var lastDataId=document.getElementById('show_from_deals').value;
+                        var t=$(".load_more_data");
+                        t.find(".normal").hide();
+                        t.find(".loader").show();
+                        $.ajax({
+                            url:'load_data.php?l='+lastDataId+'&i=57774&t=28cm Wooden Pizza Se&',
+                            data:$(this).serialize(),
+                            type:'POST',
+                            success:function(data){
+                                console.log(data);
+                                document.getElementById('ajax_searching_sent').value=0;
+                                searching = false;
+                                $(".showmoredata:last").before(data);
+                                t.find(".loader").hide();
+                                var tempDiv = $("<div/>");
+                                tempDiv.append(data);
+                                var myValue = tempDiv.find("input[name='show_from_deals_data']").val();
+                                document.getElementById('show_from_deals').value=myValue;
+                                //if(myValue<//){
+                                if(myValue!=lastDataId) t.find(".normal").show();
+                                // }
+                            },error:function(){
+                                document.getElementById('ajax_searching_sent').value=0;
+                            }
+                        });
+                    }
+                }
+                $(".load_more_data .normal").on("click", function(e){
+                    if(document.getElementById('ajax_searching_sent').value=='0'){
+                        document.getElementById('ajax_searching_sent').value=1;
+                        loadData();
+                    }
+                    e.preventDefault();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('#loading')
+                    .hide()
+                    .ajaxStart(function() {
+                        $(this).show();
+                    })
+                    .ajaxStop(function() {
+                        $(this).hide();
+                    });
+            });
+        </script>
+</body>
+</html>
